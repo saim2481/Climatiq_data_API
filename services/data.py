@@ -3,7 +3,7 @@ import pprint
 import json
 
 def fetch_data():
-    df = pd.read_csv(r'services\climatiq_data2.csv')
+    df = pd.read_csv('services/climatiq_data2.csv')
     df = df.fillna('None')
     return df.to_dict(orient='records')
     # unique_values = {col: df[col].unique().tolist() for col in df.columns}
